@@ -458,6 +458,7 @@ main {
   width: 100%;
   position: relative;
   padding-top: 100px;
+  padding-bottom: 140px;
 }
 .container .project__about {
   display: flex;
@@ -487,6 +488,54 @@ main {
 }
 .container .project__text {
   display: flex;
+  justify-content: center;
+}
+.container .line9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.project__text .project--page {
+  width: 400px;
+  display: flex;
+  gap: 15px;
+  align-items: start;
+  justify-content: center;
+  margin-top: 35px;
+}
+.project__text .project--page .text {
+  color: #282B22;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 150%; /* 27px */
+}
+.project__text .first--text {
+  margin-right: 60px;
+}
+.project__text .second--text {
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 1265px) {
+  .project__text {
+    margin: 0 auto;
+  }
+  .about__image {
+    display: none;
+  }
+  .project--image {
+    display: none;
+  }
+}
+.achievement {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 200px 140px;
 }
 
 * {
