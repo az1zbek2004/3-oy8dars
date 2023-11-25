@@ -628,6 +628,143 @@ main {
     display: none;
   }
 }
+.discuss_container {
+  width: 1600px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.discuss_container .discuss__form-wrap {
+  width: 800px;
+  height: 696px;
+  flex-shrink: 0;
+  background-color: #3D4A39;
+}
+.discuss_container .discuss__image {
+  width: 800px;
+  height: 696px;
+}
+
+.discuss__form-inner {
+  width: 400px;
+  margin: 100px auto;
+}
+.discuss__form-inner .discuss__title {
+  color: #FFF;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 57.5px */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.discuss__form-inner .discuss__text {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%; /* 23.2px */
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+.discuss__form-inner .discuss__form {
+  display: flex;
+  flex-direction: column;
+}
+.discuss__form-inner .discuss__form input {
+  width: 330px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.discuss__form-inner .discuss__form #type-file {
+  display: none;
+}
+.discuss__form-inner .discuss__form .file-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+.discuss__form-inner .discuss__form .file-input .file-title {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+}
+.discuss__form-inner .discuss__form .button-input {
+  display: flex;
+  width: 330px;
+  padding: 22px 56px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  background: #AE7B3C;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
+  color: #FFF;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 16px */
+}
+.discuss__form-inner .discuss__form .button-input:hover {
+  background: #99611c;
+}
+.discuss__form-inner .discuss__form .radio {
+  display: flex;
+  margin-top: 26px;
+}
+.discuss__form-inner .discuss__form .radio .label {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  margin-left: 10px;
+  font-weight: 500;
+  line-height: 130%; /* 15.6px */
+}
+.discuss__form-inner .discuss__form .radio #image-wrap {
+  position: relative;
+  margin-left: 10px;
+}
+.discuss__form-inner .discuss__form .radio .label2 {
+  display: none;
+}
+.discuss__form-inner .discuss__form .radio #radio-input:checked + label {
+  display: block;
+}
+.discuss__form-inner .discuss__form .radio #image-inner {
+  position: absolute;
+  left: 214.7px;
+  bottom: 249.5px;
+}
+.discuss__form-inner .discuss__form #radio-input {
+  display: none;
+}
+.discuss__form-inner input:focus {
+  outline: none;
+}
+.discuss__form-inner ::placeholder {
+  opacity: 0.5;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145%; /* 23.2px */
+}
+
+@media screen and (max-width: 1265px) {
+  .discuss___image img {
+    object-fit: contain;
+  }
+}
 * {
   padding: 0;
   margin: 0;
