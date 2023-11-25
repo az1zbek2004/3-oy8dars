@@ -537,7 +537,97 @@ main {
   margin: 0 auto;
   padding: 0 200px 140px;
 }
+.achievement .container .achievement__title {
+  margin-bottom: 80px;
+  color: var(--, #282B22);
+  text-align: center;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 57.5px */
+  text-transform: uppercase;
+}
+.achievement .container .first {
+  display: flex;
+  padding-top: 50px;
+}
+.achievement .container .first .first--number {
+  color: #282B22;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+  opacity: 0.3;
+}
+.achievement .container .first .inner_class {
+  display: flex;
+  gap: 40px;
+  margin-left: 573px;
+}
+.achievement .container .first .vertical--line {
+  display: flex;
+  text-align: center;
+}
+.achievement .container .first .third--number {
+  color: #AE7B3C;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 41.6px */
+  opacity: 1;
+}
+.achievement .container .first .acheivement--image {
+  position: absolute;
+  left: 116px;
+  bottom: 470px;
+}
+.achievement .container .first .first--text .three-gold {
+  color: #AE7B3C;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 41.6px */
+}
+.achievement .container .first .first--text .two {
+  width: 470px;
+}
+.achievement .container .first .first--text .last-text {
+  width: 420px;
+}
+.achievement .container .first .first--text h2 {
+  color: #282B22;
+  font-size: 32px;
+  font-style: normal;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 130%; /* 41.6px */
+}
+.achievement .container .first .first--text p {
+  opacity: 0.8;
+  color: #282B22;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 21.6px */
+}
 
+@media screen and (max-width: 1265px) {
+  .achievement_container .acheivement--image {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .achievement_container .first {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .achievement_container .first .inner_class {
+    margin-right: -573px;
+  }
+  .achievement_container img {
+    display: none;
+  }
+}
 * {
   padding: 0;
   margin: 0;

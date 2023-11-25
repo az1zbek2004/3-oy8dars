@@ -1,0 +1,111 @@
+// ACHIEVEMENTS 
+
+.achievement{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 200px 140px;
+    .container{
+        .achievement__title{
+            margin-bottom: 80px;
+            color: var(--, #282B22);
+            text-align: center;
+            font-size: 46px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 125%; /* 57.5px */
+            text-transform: uppercase;
+        }
+        .first{
+            display: flex;
+            padding-top: 50px;
+            .first--number{
+                color: #282B22;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 100%; /* 24px */
+                opacity: 0.3;
+            }
+            .inner_class{
+                display: flex;
+                gap: 40px;
+                margin-left: 573px;
+            }
+            .vertical--line{
+                display: flex;
+                text-align: center;
+            }
+            .third--number{
+                color:#AE7B3C;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 100%; /* 41.6px */
+                opacity: 1;
+            }
+            .acheivement--image{
+                position: absolute;
+                left: 116px;
+                bottom: 470px;
+            }
+            .first--text{
+                .three-gold{
+                    color:#AE7B3C;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 130%; /* 41.6px */
+                }
+              
+                .two{
+                    width: 470px;
+                }
+
+                .last-text{
+                    width: 420px;
+                }
+                
+                h2{
+                    color: #282B22;
+                    font-size: 32px;
+                    font-style: normal;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    line-height: 130%; /* 41.6px */
+                }
+                p{
+                    opacity: 0.8;
+                    color: #282B22;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 135%; /* 21.6px */
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1265px){
+    .achievement_container{
+        .acheivement--image{
+            display: none;
+        }
+}
+}
+@media screen and (max-width: 500px){
+    .achievement_container{
+        .first{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            .inner_class{
+                margin-right: -573px;
+            }
+        }
+        img{
+            display: none;
+        }
+}
+}
